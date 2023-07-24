@@ -3,6 +3,17 @@
     font-family: Work Sans;
 }
 
+.banner-title-two {
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
 .small-text {
     color: #534C64;
     font-size: 1.25rem;
@@ -80,7 +91,7 @@ nav>ul {
 
 nav li {
     list-style: none;
-    margin-right: 30px;
+    margin-left: 30px;
     font-weight: 500;
     font-size: 1rem;
     color: #3C354F;
@@ -94,8 +105,11 @@ nav li a {
 .banner {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url('../images/Group 14.png');
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    margin: 0 15rem;
 }
 
 .banner img {
@@ -111,17 +125,48 @@ nav li a {
     margin: 0;
 }
 
-.banner-title-two {
-    font-size: 6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
+
+/* we-are-gamer section style */
+.we-are-gamer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 15rem;
 }
 
+.we-are-gamer-img {
+    width: 900px;
+    height: 500px;
+}
+
+.we-are-gamer-content {
+    text-align: right;
+}
+
+.we-are-gamer-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.we-are-gamer-text {
+    width: 530px;
+    height: 120px;
+}
+
+.we-are-gamer-text-1 {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+
+}
+.we-are-gamer-text-1 span {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
 
 
 
@@ -132,29 +177,31 @@ nav li a {
     header {
         padding: 0px;
     }
+
     nav {
         margin: 0;
     }
+
     nav li {
         margin-top: 20px;
     }
-    .banner img {
-        
-    }
+
+    .banner img {}
 
     /* flex-direction very *** */
-    nav, nav>ul {
+    nav,
+    nav>ul {
         flex-direction: column;
     }
 
     .banner {
         flex-direction: column-reverse;
     }
-    
-    
 
-/* tablet or medium devices */
-/* @media screen and (min-width: 576px) and (max-width: 960px) {
+
+
+    /* tablet or medium devices */
+    /* @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
         padding: 5 0px;
     }
@@ -166,4 +213,6 @@ nav li a {
     .sponsors-img-container {
         flex-direction: column;
     }
-} */
+}
+
+*/
