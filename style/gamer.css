@@ -5,7 +5,7 @@
 
 .small-text {
     color: #534C64;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -41,12 +41,12 @@ nav {
 }
 
 .logo img {
-    width: 86.041px;
+    width: 80px;
     height: 40px;
 }
 
 .logo h3 {
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -99,20 +99,20 @@ nav li a {
 }
 
 .banner img {
-    width: 711px;
+    width: 700px;
     height: 670px;
 }
 
 .banner-title-one {
     color: #0B0223;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
 }
 
 .banner-title-two {
-    font-size: 95px;
+    font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -130,18 +130,31 @@ nav li a {
 /* mobile devices */
 @media screen and (max-width: 576px) {
     header {
-        padding: 20px;
+        padding: 0px;
+    }
+    nav {
+        margin: 0;
+    }
+    nav li {
+        margin-top: 20px;
+    }
+    .banner img {
+        
     }
 
     /* flex-direction very *** */
-    nav {
+    nav, nav>ul {
         flex-direction: column;
     }
 
+    .banner {
+        flex-direction: column-reverse;
+    }
+    
     
 
 /* tablet or medium devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
+/* @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
         padding: 5 0px;
     }
@@ -153,4 +166,4 @@ nav li a {
     .sponsors-img-container {
         flex-direction: column;
     }
-}
+} */
