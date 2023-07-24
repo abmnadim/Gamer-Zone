@@ -1,0 +1,156 @@
+/* shared style */
+* {
+    font-family: Work Sans;
+}
+
+.small-text {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: 21px 40px;
+    background: #ff42a5;
+    border-radius: 48px;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-2 {
+    background: #4EC5F7;
+    margin-left: 24px;
+}
+
+/* header style */
+
+/* nav style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 15rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 86.041px;
+    height: 40px;
+}
+
+.logo h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #ff42a5;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+.follow-us-logo {
+    display: flex;
+    margin-right: 20px;
+    gap: 10px;
+    width: 33px;
+    height: 24px;
+}
+
+#follow-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 240px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #3C354F;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* banner style */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../images/Group 14.png');
+}
+
+.banner img {
+    width: 711px;
+    height: 670px;
+}
+
+.banner-title-one {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-title-two {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    /* flex-direction very *** */
+    nav {
+        flex-direction: column;
+    }
+
+    
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 5 0px;
+    }
+
+    /* flex-direction very *** */
+    nav,
+    .features,
+    .teams-container,
+    .sponsors-img-container {
+        flex-direction: column;
+    }
+}
