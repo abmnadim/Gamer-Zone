@@ -161,12 +161,34 @@ nav li a {
     line-height: 45px;
 
 }
+
 .we-are-gamer-text-1 span {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 45px;
 }
+
+/* online game style */
+.online-game-text {
+    text-align: center;
+}
+
+.online-game-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.online-game-title span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
 
 
 
@@ -175,33 +197,75 @@ nav li a {
 /* mobile devices */
 @media screen and (max-width: 576px) {
     header {
-        padding: 0px;
+        padding: 20px;
+        width: 150vw;
+        margin-left: 250px;
+
+        /* display: flex;
+        justify-content: center; */
     }
 
+    /* .nav-title {
+        justify-content: center;
+    } */
     nav {
-        margin: 0;
+        margin: auto;
+        justify-content: center;
+    }
+
+    nav ul {
+        padding: 0;
     }
 
     nav li {
         margin-top: 20px;
     }
 
-    .banner img {}
-
-    /* flex-direction very *** */
+    /* flex-direction */
     nav,
     nav>ul {
         flex-direction: column;
     }
 
-    .banner {
+    /* banner */
+    .banner,
+    .we-are-gamer {
         flex-direction: column-reverse;
     }
+
+    .banner-content {
+        justify-content: center;
+        margin: 200px;
+    }
+
+    .banner-title-one {
+        width: 200%;
+    }
+
+    .btn-1 {
+        margin: 10px 0 20px 100px;
+    }
+
+    .btn-2 {
+        margin: 0 0 20px 80px;
+    }
+
+    /* we-are-gamer */
+    .we-are-gamer {
+        margin-left: 400px;
+        padding-left: 150px;
+    }
+    .we-are-gamer-content {
+        text-align: center;
+        /* margin-left: 220px; */
+    }
+        
+    
 
 
 
     /* tablet or medium devices */
-    /* @media screen and (min-width: 576px) and (max-width: 960px) {
+    @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
         padding: 5 0px;
     }
@@ -214,5 +278,3 @@ nav li a {
         flex-direction: column;
     }
 }
-
-*/
