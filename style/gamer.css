@@ -205,7 +205,7 @@ nav li a {
     display: flex;
     justify-content: center;
     gap: 240px;
-    margin: 200px;
+    margin: 200px 200px 0px 200px;
 }
 
 .play-instantly-title {
@@ -233,6 +233,33 @@ nav li a {
 .play-instantly-description {
     text-align: right;
 }
+
+/* game types style */
+.types {
+    background-color: lightgray;
+    padding: 120px 240px;
+    /* display: grid;
+    grid-template-columns: repeat(5, 250px);
+    justify-content: space-around; */
+}
+.row-1, .row-2 {
+    display: flex;
+    justify-content: center;
+}
+.type-name {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+.type-and-img {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 300px;
+}
+
+/* footer style */
 
 
 
